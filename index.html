@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +12,184 @@
             color: #333;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
         }
+
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cover-image.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 10px 0;
             text-align: center;
+            padding: 100px 0;
+            position: relative;
         }
+
+        header h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         .container {
             width: 80%;
             margin: auto;
-            padding: 20px;
+            padding: 40px 0;
         }
+
         h1, h2, h3 {
             color: #4CAF50;
         }
+
         .section {
             margin-bottom: 40px;
         }
+
         .contact-info {
             margin-top: 20px;
             font-size: 16px;
         }
+
         .contact-info a {
             color: #4CAF50;
             text-decoration: none;
         }
-        .skills-list, .projects-list {
+
+        .skills-list,
+        .projects-list {
             list-style-type: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
-        .skills-list li, .projects-list li {
-            padding: 5px 0;
+
+        .skills-list li,
+        .projects-list li {
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li:hover,
+        .projects-list li:hover {
+            transform: translateY(-5px);
+        }
+
+        .projects-list li {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        a.btn {
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-info a:hover {
+            color: #333;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #4CAF50;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #333;
+        }
+
+        .scroll-up-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .scroll-up-btn.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header {
+                padding: 60px 0;
+            }
+
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
+    <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
     <h1>Appu M - Application Engineer</h1>
 </header>
 
 <div class="container">
     <section class="section about-me">
         <h2>About Me</h2>
-        <p>Enthusiastic and results-oriented Application Engineer with 1+ years of experience building cross-platform mobile applications. I have a strong foundation in Dart programming, UI/UX design, and back-end technologies like PHP and JSON. I am passionate about creating high-quality, user-centric applications that meet business objectives and deliver outstanding user experiences.</p>
-        <p>In addition to my mobile app development expertise, I have solid experience with Python for automation and web development. I have worked on projects automating server backup tasks using Python scripts to ensure data security and efficiency. My back-end skills include extensive knowledge of SQL and DBMS, allowing me to design, manage, and optimize databases efficiently.</p>
-        <p>I also prioritize the use of MVVM architecture in my projects, ensuring code reusability, separation of concerns, and scalability. Following best practices for structuring code, I aim to deliver maintainable and flexible software solutions that align with the project's long-term goals.</p>
-        <p>I am always looking to expand my skill set and embrace new technologies, which is why I've gained hands-on experience working with MQTT for IoT projects, enabling real-time device communication and management. I'm highly adaptable, with excellent problem-solving abilities, and a collaborative approach to teamwork.</p>
+        <p>Enthusiastic and results-oriented Application Engineer with 1+ years of experience building cross-platform mobile applications...</p>
     </section>
 
     <section class="section experience">
@@ -66,34 +197,24 @@
         <h3>Flutter Developer & Application Engineer</h3>
         <p>Herin Electronics, Mandya Karnataka IN | Jan 2023 - Present</p>
         <ul>
-            <li>Developed and maintained cross-platform mobile applications for diverse clients.</li>
-            <li>Designed and implemented UI/UX components using Flutter's widget framework.</li>
-            <li>Worked on IoT dashboards and e-commerce websites.</li>
-            <li>Gained hands-on experience with MQTT for real-time data communication.</li>
-            <li>Followed MVVM architecture to ensure code reusability, separation of concerns, and scalable application structures.</li>
+            <li>Developed and maintained cross-platform mobile applications...</li>
         </ul>
     </section>
 
     <section class="section projects">
         <h2>Projects</h2>
         <ul class="projects-list">
-            <li><strong>Open-Source To-Do List Manager (Flutter & Dart):</strong> Implemented new features for task prioritization and reminders.</li>
-            <li><strong>Interactive Widgets Showcase (Flutter):</strong> Created reusable widgets for common UI elements like buttons and sliders.</li>
-            <li><strong>Python IoT Dashboard:</strong> Built a dashboard for monitoring IoT devices and data using Python and Flask.</li>
-            <li><strong>Automating Server Backup Tasks:</strong> Automated daily server backup tasks using Python scripts to ensure data security.</li>
+            <li><strong>Open-Source To-Do List Manager:</strong> Implemented new features for task prioritization and reminders.</li>
+            <li><strong>Interactive Widgets Showcase:</strong> Created reusable widgets for UI elements...</li>
         </ul>
     </section>
 
     <section class="section skills">
         <h2>Technical Skills</h2>
         <ul class="skills-list">
-            <li>Flutter, Dart Programming, Cross-Platform Development</li>
-            <li>Python for Automation and Web Development (Flask)</li>
-            <li>MVVM Architecture, Code Reusability, Separation of Concerns</li>
-            <li>Embedded C, C++, Linux, Ubuntu</li>
-            <li>SQL, DBMS, Database Design & Optimization</li>
-            <li>Git, API Integration, JSON, PHP</li>
-            <li>OS: MacOS, Linux, Windows</li>
+            <li>Flutter, Dart Programming</li>
+            <li>Python for Automation</li>
+            <li>MVVM Architecture</li>
         </ul>
     </section>
 
@@ -105,8 +226,31 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/appu">linkedin.com/in/appu</a></p>
             <p>GitHub: <a href="https://github.com/Appu">github.com/Appu</a></p>
         </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/appu" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Appu" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </section>
 </div>
 
+<footer>
+    <p>Appu M &copy; 2024 | All rights reserved.</p>
+</footer>
+
+<button class="scroll-up-btn" onclick="window.scrollTo(0, 0);">↑</button>
+
+<script>
+    // Scroll to top button functionality
+    window.addEventListener('scroll', function () {
+        const scrollUpBtn = document.querySelector('.scroll-up-btn');
+        if (window.pageYOffset > 300) {
+            scrollUpBtn.classList.add('show');
+        } else {
+            scrollUpBtn.classList.remove('show');
+        }
+    });
+</script>
+
 </body>
+
 </html>
