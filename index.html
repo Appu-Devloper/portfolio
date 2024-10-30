@@ -3,110 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appu M - Application Engineer</title>
+    <title>Appu M | Software Developer</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+            background: #f4f4f4;
+            color: #333;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            max-width: 1100px;
+            margin: 40px auto;
             padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
-            color: #4CAF50;
+            color: #003366;
+            margin-bottom: 10px;
         }
-        .section {
-            margin-bottom: 40px;
+        h1 {
+            font-size: 2.5em;
         }
-        .contact-info {
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+        h3 {
             margin-top: 20px;
-            font-size: 16px;
         }
-        .contact-info a {
-            color: #4CAF50;
+        p, ul {
+            line-height: 1.6;
+            color: #444;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .header {
+            background: linear-gradient(45deg, #003366, #0056b3);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .header a {
+            color: #ffd700;
             text-decoration: none;
+            font-weight: bold;
         }
-        .skills-list, .projects-list {
-            list-style-type: none;
-            padding: 0;
+        .header a:hover {
+            text-decoration: underline;
         }
-        .skills-list li, .projects-list li {
-            padding: 5px 0;
+        .section-title {
+            background: #0056b3;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .skills-list, .project-card, .education-card, .experience-card {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f2f5;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skills-list span, .project-card h3, .education-card h3, .experience-card h3 {
+            color: #0056b3;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #003366;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            background: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Appu M - Application Engineer</h1>
-</header>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Appu M | Software Developer</h1>
+        <p>Email: <a href="mailto:appua0126@gmail.com">appua0126@gmail.com</a> | 
+            Mobile: (+91) 8861357375 | 
+            LinkedIn: <a href="#">LinkedIn Profile</a> | 
+            GitHub: <a href="https://github.com/Appu-Devloper">github.com/Appu-Devloper</a>
+        </p>
+        <p><strong>Total Work Experience:</strong> 2 Years</p>
+    </div>
 
-<div class="container">
-    <section class="section about-me">
-        <h2>About Me</h2>
-        <p>Enthusiastic and results-oriented Application Engineer with 1+ years of experience building cross-platform mobile applications. I have a strong foundation in Dart programming, UI/UX design, and back-end technologies like PHP and JSON. I am passionate about creating high-quality, user-centric applications that meet business objectives and deliver outstanding user experiences.</p>
-        <p>In addition to my mobile app development expertise, I have solid experience with Python for automation and web development. I have worked on projects automating server backup tasks using Python scripts to ensure data security and efficiency. My back-end skills include extensive knowledge of SQL and DBMS, allowing me to design, manage, and optimize databases efficiently.</p>
-        <p>I also prioritize the use of MVVM architecture in my projects, ensuring code reusability, separation of concerns, and scalability. Following best practices for structuring code, I aim to deliver maintainable and flexible software solutions that align with the project's long-term goals.</p>
-        <p>I am always looking to expand my skill set and embrace new technologies, which is why I've gained hands-on experience working with MQTT for IoT projects, enabling real-time device communication and management. I'm highly adaptable, with excellent problem-solving abilities, and a collaborative approach to teamwork.</p>
-    </section>
-
-    <section class="section experience">
-        <h2>Professional Experience</h2>
-        <h3>Flutter Developer & Application Engineer</h3>
-        <p>Herin Electronics, Mandya Karnataka IN | Jan 2023 - Present</p>
-        <ul>
-            <li>Developed and maintained cross-platform mobile applications for diverse clients.</li>
-            <li>Designed and implemented UI/UX components using Flutter's widget framework.</li>
-            <li>Worked on IoT dashboards and e-commerce websites.</li>
-            <li>Gained hands-on experience with MQTT for real-time data communication.</li>
-            <li>Followed MVVM architecture to ensure code reusability, separation of concerns, and scalable application structures.</li>
-        </ul>
-    </section>
-
-    <section class="section projects">
-        <h2>Projects</h2>
-        <ul class="projects-list">
-            <li><strong>Open-Source To-Do List Manager (Flutter & Dart):</strong> Implemented new features for task prioritization and reminders.</li>
-            <li><strong>Interactive Widgets Showcase (Flutter):</strong> Created reusable widgets for common UI elements like buttons and sliders.</li>
-            <li><strong>Python IoT Dashboard:</strong> Built a dashboard for monitoring IoT devices and data using Python and Flask.</li>
-            <li><strong>Automating Server Backup Tasks:</strong> Automated daily server backup tasks using Python scripts to ensure data security.</li>
-        </ul>
-    </section>
-
-    <section class="section skills">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>Flutter, Dart Programming, Cross-Platform Development</li>
-            <li>Python for Automation and Web Development (Flask)</li>
-            <li>MVVM Architecture, Code Reusability, Separation of Concerns</li>
-            <li>Embedded C, C++, Linux, Ubuntu</li>
-            <li>SQL, DBMS, Database Design & Optimization</li>
-            <li>Git, API Integration, JSON, PHP</li>
-            <li>OS: MacOS, Linux, Windows</li>
-        </ul>
-    </section>
-
-    <section class="section contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:appua0126@gmail.com">appua0126@gmail.com</a></p>
-            <p>Phone: 8861357375</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/appu">linkedin.com/in/appu</a></p>
-            <p>GitHub: <a href="https://github.com/Appu">github.com/Appu</a></p>
+    <div class="container">
+        <!-- Profile Summary -->
+        <div class="section">
+            <div class="section-title">Profile Summary</div>
+            <p>
+                I am a skilled Software Developer with over two years of experience in building cross-platform mobile apps using Flutter, Dart, and backend technologies. I specialize in creating seamless user experiences, optimizing databases with SQL, and implementing data-driven solutions using Python for automation and analytics. I have a proven track record at Herin Electronics, leading projects in IoT dashboards and e-commerce apps, with hands-on integration of IoT devices.
+            </p>
         </div>
-    </section>
-</div>
+
+        <!-- Key Skills -->
+        <div class="section">
+            <div class="section-title">Key Skills</div>
+            <div class="skills-list">
+                <span class="skill">C++</span>
+                <span class="skill">Python</span>
+                <span class="skill">Dart</span>
+                <span class="skill">SQL</span>
+                <span class="skill">PHP</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">MQTT</span>
+                <span class="skill">PhpMyAdmin</span>
+                <span class="skill">DBMS</span>
+                <span class="skill">Ubuntu</span>
+                <span class="skill">macOS</span>
+                <span class="skill">Windows</span>
+                <span class="skill">Git</span>
+                <span class="skill">Postman</span>
+                <span class="skill">Visual Studio Code</span>
+                <span class="skill">Android Studio</span>
+                <span class="skill">GitLab</span>
+            </div>
+        </div>
+
+        <!-- Core Strengths -->
+        <div class="section">
+            <div class="section-title">Core Strengths</div>
+            <ul>
+                <li>Strong problem-solving and analytical skills</li>
+                <li>Excellent communication and team collaboration</li>
+                <li>Quick adaptability to new technologies</li>
+                <li>Results-oriented and highly adaptable</li>
+                <li>Passionate about building high-quality software solutions</li>
+            </ul>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            <div class="experience-card">
+                <h3>Software Developer | Herin Electronics | Jan 2023 - Present</h3>
+                <ul>
+                    <li>Developed and maintained cross-platform mobile apps using Flutter and Dart for both Android and iOS.</li>
+                    <li>Integrated IoT devices with applications using protocols like MQTT, ensuring real-time data communication and user customization.</li>
+                    <li>Worked extensively on backend services, implementing API endpoints, server-side logic, and database connections using SQL.</li>
+                    <li>Optimized SQL queries for faster data retrieval, improved database structure, and conducted performance tuning.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-card">
+                <h3>Master of Computer Application (MCA) | CGPA: 8.3</h3>
+                <p>Karnataka State Open University | 2022 - 2025 (Expected)</p>
+            </div>
+            <div class="education-card">
+                <h3>Bachelor of Computer Application (BCA) | CGPA: 8.9</h3>
+                <p>Davangere University, Davangere, Karnataka, IN | 2019 - 2022</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+
+            <div class="project-card">
+                <h3>IoT Dashboard for Data Management</h3>
+                <ul>
+                    <li>Developed a robust IoT dashboard for data reading from serial ports and report generation.</li>
+                    <li>Implemented customization options based on specific user requirements.</li>
+                    <li>Integrated real-time data visualization and customization features.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Apps for Video and Content Streaming (Android & iOS)</h3>
+                <ul>
+                    <li>Designed and deployed live apps for streaming audio, video, and PDF content.</li>
+                    <li>Implemented features like audio/video streaming, media management, and seamless user interaction.</li>
+                    <li>Integrated real-time chat functionality, allowing users to engage in media-based conversations using SQLite for local storage.</li>
+                    <li>The apps are available on Google Play Store and Apple App Store.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Open-Source To-Do List Manager (Flutter & Dart)</h3>
+                <ul>
+                    <li>Contributed to a popular open-source Flutter project for managing to-do lists.</li>
+                    <li>Implemented features like task prioritization and reminder notifications.</li>
+                    <li>Designed and developed reusable widgets for common UI components (e.g., buttons, sliders).</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Basic MQTT Chat Application (Flutter & Dart)</h3>
+                <ul>
+                    <li>Developed a Flutter application enabling basic chat functionality using MQTT.</li>
+                    <li>Implemented message exchange through MQTT's subscribing and publishing mechanisms.</li>
+                    <li>Created basic UI components like chat input fields and message bubbles to facilitate user interaction.</li>
+                    <li>Focused on maintaining a minimal and functional design for seamless communication.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Declaration -->
+        <div class="section">
+            <div class="section-title">Declaration</div>
+            <p>I hereby declare that the information provided is true to the best of my knowledge and belief.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Appu M | All Rights Reserved</p>
+    </div>
 
 </body>
 </html>
